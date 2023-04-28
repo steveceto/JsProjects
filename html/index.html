@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+    <body class="m-0 p-0 box-content">
+        
+        <h1 class="flex justify-center pt-10 text-4xl font-bold">JS calculator</h1>
+        <section class="px-96 pt-10 flex justify-center">
+            <h2 class="px-28  py-4 border-l border-b border-t border-solid border-black answer text-2xl"> </h2>
+            <h2 class="px-24 py-4  border-r border-b border-t border-solid border-black answer2 text-2xl"> </h2>
+        </section>
+        <main class="flex justify-center gap-5 pt-5">
+            <button class="yes  bg-green-700 w-16 h-20" value="1" onclick="setNum(2)">1</button>
+            <button class="yes w-16 h-20 bg-green-700" onclick="setNum(2)" value="2">2</button>
+            <button class="yes w-16 h-20 bg-green-700" onclick="setNum(3)"  value="3">3</button>
+            <button class="yes w-16 h-20 bg-green-700" value="*">*</button>
+            <button class="no ac w-16 h-20 bg-red-600" value="">C</button>
+        </main>
+        <main class="flex justify-center gap-5 pt-5">
+            <button class="yes w-16 h-20 bg-green-700" value="4" onclick="setNum(4)">4</button>
+            <button class="yes w-16 h-20 bg-green-700" value="5" onclick="setNum(5)">5</button>
+            <button class="yes w-16 h-20 bg-green-700" value="6" onclick="setNum(6)">6</button>
+            <button class="yes w-16 h-20 bg-green-700" value="+" onclick="">+</button>
+            <button class="no clr w-16 h-20 bg-red-600" value="">
+                <i class="bi bi-backspace"></i>
+            </button>
+        </main>
+        <main class="flex justify-center gap-5 pt-5">
+            <button class="yes w-16 h-20 bg-green-700" value="7" onclick="setNum(7)">7</button>
+            <button class="yes w-16 h-20 bg-green-700" value="8" onclick="setNum(8)">8</button>
+            <button class="yes w-16 h-20 bg-green-700" value="9" onclick="setNum(9)">9</button>
+            <button class="yes w-16 h-20 bg-green-700 text-2xl" value="-">-</button>
+            <button class="no w-16 h-20 bg-red-600 text-2xl" value="." >.</button>
+        </main>
+        <main class="flex justify-center gap-5 pt-5">
+            <button class="yes w-16 h-20 bg-green-700" value="0" onclick="setNum(0)">0</button>
+            <button class="yes w-16 h-20 bg-green-700" value="%">%</button>
+            <button class="yes w-16 h-20 bg-green-700" value="/">/</button>
+            <button class="no equal del w-36 h-20 bg-red-600 ">=</button>
+        </main>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
